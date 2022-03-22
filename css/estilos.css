@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-weight:bold;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    /*background: rgb(204, 48, 48);  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #4286f4, #444e66);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #4286f4, #444e66);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*   HEADER    */
+.nav
+{
+    background-color: hsla(180, 69%, 47%, 0.383);
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.registro
+{
+    margin-left: 180px;
+}
+
+.nav_logo
+{
+    height: 100px;
+}
+
+.nav_links
+{
+    text-decoration:none; /*Saca el subrrayado*/
+    color: inherit;
+    word-spacing: 5px;
+    justify-content: center;
+    
+}
+
+.nav_links--cont
+{
+    border-bottom: 1px solid white;
+}
+
+.nav_links--acer
+{
+    word-spacing: normal;
+}
+
+
+.nav p
+{
+    font-size: 25px;
+}
+
+/* OPCIONES */
+.Opciones
+{
+    max-width: 500px;
+	width: 90%;
+    margin:auto;
+	margin-top: 50px;
+	padding: 40px;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    background-image: linear-gradient(180deg, #019c9c, #01e0e0);
+    border-radius: 4px;
+    margin-bottom: 50px;   
+}
+
+.ocultar 
+{
+    display: none;
+}
+
+.mostrar
+{
+    display: block;
+}
+
+.recuadros
+{
+    margin-bottom: 5px;
+    border-width: 4px; 
+}
+
+
+input
+{
+    width: 100%;
+    height: 30px;
+    /*box-sizing: border-box;*/
+    line-height: 20px;
+    font-size:14px;
+    border:0;
+    background: none;
+    border-bottom:1px solid #ccc;
+    outline:none;
+    border-radius: 0;
+    
+}
+
+input:back
+{
+    background-color: red;
+}
+
+

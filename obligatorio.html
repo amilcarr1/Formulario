@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro de Usuario</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+
+<body>
+    
+    <header>
+        <nav class="nav">
+
+            <img src="img/logo.png" class="nav_logo">
+            <p class="registro">Registro de Usuario</p>
+            <div class="nav_links">
+                <a href="#" class="nav_links">Inicio</a>
+                <a href="#" class="nav_links">Servicios</a>
+                <a href="#" class="nav_links nav_links--cont">Contacto</a>
+                <a href="#" class="nav_links nav_links--acer">Acerca de</a>
+            </div>
+        </nav>
+
+    </header>
+     
+    <form name="formulario" id="formularioId" onchange="handleSubmit(); return false;">
+        <div class="Opciones">
+            <div class="recuadros">
+                <label>Nombre:</label>
+                <input name="nombre" id="nombreId"/>
+            </div>
+            <div class="recuadros">
+                <label>Apellido:</label>
+                <input name="apellido" id="apellidoId"/>
+            </div>
+            <div class="recuadros">
+                <label>Email:</label>
+                <input name="email" type="email" id="email"/>
+            </div>
+            <div class="recuadros">
+                <label>DNI:</label>
+                <input name="dni" id="dni"/>
+            </div>
+            <div class="recuadros">
+                <label>Telefono:</label>
+                <input name="telefono" id="telefonoId"/>
+            </div>
+
+            
+            <form id="miformulario" onchange="password_iguales(); return false">
+                <div class="recuadros">
+                    <label for="pass1">Contraseña:</label>
+                    <input type="password" id="pass1_id">
+                </div>
+                <div class="recuadros">
+                    <label for="pass2">Confirmar contraseña:</label>
+                    <input type="password" id="pass2_id">
+                </div>
+            </form>
+
+            <div class="confirmar">
+                <button type="submit" id="login">Confirmar</button>
+            </div>
+            <div id="errorRellenar"></div>
+        </div>
+
+        
+    </form>
+</body>
+<script src= ".funcion.js"></script>
+
+</html>
